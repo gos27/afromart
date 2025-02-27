@@ -1,0 +1,525 @@
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+}
+
+img{
+    width: auto;
+}
+
+h2 {
+    padding: 50px;
+}
+
+
+.band-name-large {
+    font-size: 8em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 1300px;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.collapse, .nav-item {
+    width: 80px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.shop-item {
+    margin: 10px;
+    margin-top: 20px 0;
+}
+
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+    width: 410px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1em;
+}
+ p, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+ }
+
+ img {object-fit: cover;}
+
+.form-detail {
+  max-width: 500px;
+  width: 50%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-out {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 10px;
+  max-width: 800px;
+  
+}
+
+
+
+.form-detail {
+  border-right: 2px solid gray;
+  padding: 10px;
+  margin-right: 5px;
+  width: 45%;
+}
+.contact-info, .contact-us {
+  margin: 20px 2px;
+  padding: 5px;
+  width: 55%;
+  
+}
+
+.contact-info {
+    max-width: 1000px;
+}
+
+.about-note, .about-img {
+    display: flex;
+}
+
+.about {
+  display: flex;
+  width: 100%;
+}
+
+.about-img {
+  width: 50%;
+
+}
+
+.about-note {
+  width: 50%;
+}
+.inner-div {
+  width: 100%;
+}
+
+.right, .left {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+  
+
+.text-box {
+  margin-left: 20px;
+}
+
+.form-check, p{
+  font-size: 11px;
+}
+
+#topcontainer{
+  width: 100%;
+}
+
+
+
+.hide {
+  position: relative ;
+  width: 50px;
+  left: 21rem;
+  bottom: 2rem;
+  cursor: pointer;
+  background-color:#ffffff ;
+}
+
+
+
+.selected {
+    border: 1px solid wh;
+}
+
+
+
+.password {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#rempass {
+    display: flex;
+    justify-content: space-between;
+}
+
+#remember {
+    display: flex;
+    justify-content: left;
+    position: relative;
+}
+
+
+/* Carousel Start */.carousel-inner {
+    height: 100vh; /* Ensure the carousel takes full viewport height */
+}
+
+.carousel-item {
+    position: relative;
+    height: 100vh; /* Ensure each slide takes full height */
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-caption {
+    bottom: 20%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 80vh; /* Reduce height for tablets */
+    }
+    .carousel-item {
+        height: 80vh;
+    }
+    .carousel-caption {
+        bottom: 15%;
+    }
+    .carousel-caption h2 {
+        font-size: 1.8rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    .btn-lg {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-inner {
+        height: 70vh; /* Reduce height for small screens */
+    }
+    .carousel-item {
+        height: 70vh;
+    }
+    .carousel-caption {
+        bottom: 10%;
+    }
+    .carousel-caption h2 {
+        font-size: 1.5rem;
+    }
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+    .btn-lg {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Carousel End */
+
+
+/* Validation Start */
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+
+/* Validation End */
+
+/* Footer Start */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px 0;
+  }
+/* Footer End */
